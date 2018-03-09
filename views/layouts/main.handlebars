@@ -18,6 +18,26 @@
 
 <body>
     {{{body}}}
+    <div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="noteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush noteList">
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <textarea class="form-control" id="noteText" rows=3></textarea>
+                    <button type="button" class="postNoteBtn btn btn-primary">Save note</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/deleteBtn.js"></script>
+    <script src="assets/js/noteBtn.js"></script>
+    <script src="assets/js/postNoteBtn.js"></script>
+    <script src="assets/js/deleteNoteBtn.js"></script>
 </body>
 
 </html>

@@ -34,10 +34,7 @@ module.exports = function (app) {
                         .catch(function (err) {
                         });
                 });
-            }).then(function () {
-                db.Headline.find({}).then(function (newHeadlines) {
-                    res.json(newHeadlines.length - current + ' added');
-                });
+                res.json('Scrape Complete');
             });
         });
     });

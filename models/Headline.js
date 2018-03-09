@@ -9,7 +9,6 @@ var HeadlineSchema = new Schema({
     required: true,
     unique: true
   },
-
   link: {
     type: String,
     required: true
@@ -18,14 +17,18 @@ var HeadlineSchema = new Schema({
     type: String,
     required: true
   },
+  saved: {
+    type: Boolean,
+    default:false
+  },
   dateAdded:{
     type:Date,
     default:Date.now
   },
-  note: {
+  notes: [{
     type: Schema.Types.ObjectId,
     ref: "Note"
-  }
+  }]
 });
 
 
